@@ -15,6 +15,11 @@ add_subdirectory(core)
 add_subdirectory(util)
 add_subdirectory(features)
 add_subdirectory(sfm)
+add_subdirectory(3rdParty/mrf)
+add_subdirectory(3rdParty/coldet)
+add_subdirectory(3rdParty/gco)
+
+include_directories("../..")
 
 #test bundle adjustment
 add_executable(twoViewsSFM main.cpp)
