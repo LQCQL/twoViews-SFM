@@ -1,4 +1,13 @@
-/*
+/*// 根据估计的Fundamental矩阵对特征匹配对进行筛选
+    sfm::Correspondences2D2D corr_f;
+    for(int i=0; i<ransac_fundamental_result.inliers.size(); ++i)
+    {
+        int inlier_id = ransac_fundamental_result.inliers[i];
+        corr_f.push_back(corr_all[inlier_id]);
+    }
+
+    std::cout<<"F: "<<ransac_fundamental_result.fundamental<<std::endl;
+    return corr_f;
  * Copyright (C) 2015, Simon Fuhrmann
  * TU Darmstadt - Graphics, Capture and Massively Parallel Computing
  * All rights reserved.

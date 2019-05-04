@@ -2,7 +2,7 @@ project(features)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS "-fPIC")
 
-#include_directories(../math)
+include_directories(../math)
 #include_directories(../util)
 include_directories("..")
 set(HEADERS
