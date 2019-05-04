@@ -15,3 +15,7 @@ add_subdirectory(core)
 add_subdirectory(util)
 add_subdirectory(features)
 add_subdirectory(sfm)
+
+#test bundle adjustment
+add_executable(twoViewsSFM main.cpp)
+target_link_libraries(twoViewsSFM sfm util core features)
